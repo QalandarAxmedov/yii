@@ -1,5 +1,6 @@
 <?php
 
+use app\models\Course;
 use app\models\Faculty;
 use app\models\Region;
 use yii\helpers\ArrayHelper;
@@ -38,11 +39,15 @@ use yii\widgets\ActiveForm;
     <?=$form->field($model, 'fakultet_id')->dropDownList(
     ArrayHelper::map(Faculty::find()->all(), 'id', 'name'),
     [
-        'prompt' => 'Fakultetni tanlang',
+        'prompt' => '-Fakultetni tanlang-',
     ]
 );?>
-
-    <?=$form->field($model, 'kurs_id')->textInput()?>
+    <?=$form->field($model, 'kurs_id')->dropDownList(
+    ArrayHelper::map(Course::find()->all(), 'id', 'name'),
+    [
+        'prompt' => '-Kursni tanlang-',
+    ]
+);?>
 
     <?=$form->field($model, 'guruh_id')->textInput()?>
 
