@@ -2389,3 +2389,399 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1633341488.1018
     'REQUEST_TIME' => 1633341488
 ]
+2021-10-04 12:13:26 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 12:13:26 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '46380'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/debug/default/view?tag=615acf147e8d7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1633349606.1668
+    'REQUEST_TIME' => 1633349606
+]
+2021-10-04 12:21:48 [::1][-][7s3f5qaageausejbihger945s2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ActiveForm::layout in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Component.php:210
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php(558): yii\base\Component->__set()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Widget.php(90): yii\BaseYii::createObject()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/_form.php(18): yii\base\Widget::begin()
+#8 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#9 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#10 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#11 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/create.php(17): yii\base\View->render()
+#12 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#13 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#14 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#15 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#16 /home/qalandaraxmedov/Documents/mysite/yii/controllers/TalabaController.php(80): yii\base\Controller->render()
+#17 [internal function]: app\controllers\TalabaController->actionCreate()
+#18 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#19 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#20 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#21 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#22 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#23 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2021-10-04 12:21:48 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '46596'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/talaba/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/talaba/create'
+    'PHP_SELF' => '/index.php/talaba/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'REQUEST_TIME_FLOAT' => 1633350108.6118
+    'REQUEST_TIME' => 1633350108
+]
+2021-10-04 12:43:09 [::1][-][7s3f5qaageausejbihger945s2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Talaba::ism1 in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Component.php:155
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/helpers/BaseHtml.php(2248): yii\db\BaseActiveRecord->__get()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/helpers/BaseHtml.php(1363): yii\helpers\BaseHtml::getAttributeValue()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/helpers/BaseHtml.php(1419): yii\helpers\BaseHtml::activeInput()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activeTextInput()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/_form.php(19): yii\widgets\ActiveField->textInput()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#7 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#8 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#9 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/create.php(17): yii\base\View->render()
+#10 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#11 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#14 /home/qalandaraxmedov/Documents/mysite/yii/controllers/TalabaController.php(80): yii\base\Controller->render()
+#15 [internal function]: app\controllers\TalabaController->actionCreate()
+#16 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#17 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#18 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#19 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#20 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#21 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2021-10-04 12:43:09 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '47120'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/talaba/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/talaba/create'
+    'PHP_SELF' => '/index.php/talaba/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'REQUEST_TIME_FLOAT' => 1633351389.5729
+    'REQUEST_TIME' => 1633351389
+]
+2021-10-04 12:47:28 [::1][-][7s3f5qaageausejbihger945s2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\validators\StringValidator::0 in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Component.php:210
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php(558): yii\base\Component->__set()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/validators/Validator.php(231): yii\BaseYii::createObject()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(469): yii\validators\Validator::createValidator()
+#8 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(421): yii\base\Model->createValidators()
+#9 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(190): yii\base\Model->getValidators()
+#10 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(817): yii\base\Model->scenarios()
+#11 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(435): yii\base\Model->activeAttributes()
+#12 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(495): yii\base\Model->getActiveValidators()
+#13 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/widgets/ActiveField.php(929): yii\base\Model->isAttributeRequired()
+#14 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/widgets/ActiveField.php(405): yii\widgets\ActiveField->addAriaAttributes()
+#15 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/_form.php(19): yii\widgets\ActiveField->textInput()
+#16 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#17 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#19 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/create.php(17): yii\base\View->render()
+#20 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#21 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#22 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#23 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#24 /home/qalandaraxmedov/Documents/mysite/yii/controllers/TalabaController.php(80): yii\base\Controller->render()
+#25 [internal function]: app\controllers\TalabaController->actionCreate()
+#26 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#27 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#28 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#29 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#30 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#31 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#32 {main}
+2021-10-04 12:47:28 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '47426'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/talaba/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/talaba/create'
+    'PHP_SELF' => '/index.php/talaba/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'REQUEST_TIME_FLOAT' => 1633351648.4618
+    'REQUEST_TIME' => 1633351648
+]
+2021-10-04 12:48:08 [::1][-][7s3f5qaageausejbihger945s2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\validators\StringValidator::0 in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Component.php:210
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php(558): yii\base\Component->__set()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/validators/Validator.php(231): yii\BaseYii::createObject()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(469): yii\validators\Validator::createValidator()
+#8 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(421): yii\base\Model->createValidators()
+#9 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(190): yii\base\Model->getValidators()
+#10 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(817): yii\base\Model->scenarios()
+#11 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(435): yii\base\Model->activeAttributes()
+#12 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Model.php(495): yii\base\Model->getActiveValidators()
+#13 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/widgets/ActiveField.php(929): yii\base\Model->isAttributeRequired()
+#14 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/widgets/ActiveField.php(405): yii\widgets\ActiveField->addAriaAttributes()
+#15 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/_form.php(19): yii\widgets\ActiveField->textInput()
+#16 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#17 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#19 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/create.php(17): yii\base\View->render()
+#20 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#21 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#22 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#23 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#24 /home/qalandaraxmedov/Documents/mysite/yii/controllers/TalabaController.php(80): yii\base\Controller->render()
+#25 [internal function]: app\controllers\TalabaController->actionCreate()
+#26 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#27 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#28 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#29 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#30 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#31 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#32 {main}
+2021-10-04 12:48:08 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '47432'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/talaba/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/talaba/create'
+    'PHP_SELF' => '/index.php/talaba/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'REQUEST_TIME_FLOAT' => 1633351688.94
+    'REQUEST_TIME' => 1633351688
+]
+2021-10-04 12:53:11 [::1][-][7s3f5qaageausejbihger945s2][error][Error] Error: Call to a member function label() on array in /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/_form.php:19
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/views/talaba/create.php(17): yii\base\View->render()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(348): require('/home/qalandara...')
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#8 /home/qalandaraxmedov/Documents/mysite/yii/controllers/TalabaController.php(80): yii\base\Controller->render()
+#9 [internal function]: app\controllers\TalabaController->actionCreate()
+#10 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#11 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#13 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#14 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#15 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2021-10-04 12:53:11 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '47546'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/talaba/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/talaba/create'
+    'PHP_SELF' => '/index.php/talaba/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'REQUEST_TIME_FLOAT' => 1633351991.5578
+    'REQUEST_TIME' => 1633351991
+]

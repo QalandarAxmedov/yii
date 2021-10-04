@@ -41,7 +41,7 @@ class Talaba extends \yii\db\ActiveRecord
         return [
             [['ism', 'familiya', 'region_id', 'district_id', 'fakultet_id', 'kurs_id', 'guruh_id', 'yunalish_id', 'edlang_id', 'edtype_id', 'bino_id', 'qavat_id', 'xona_id'], 'required'],
             [['region_id', 'district_id', 'fakultet_id', 'kurs_id', 'guruh_id', 'yunalish_id', 'edlang_id', 'edtype_id', 'bino_id', 'qavat_id', 'xona_id'], 'integer'],
-            [['ism', 'familiya', 'otasining_ismi'], 'string', 'max' => 45],
+            [['ism', 'familiya', 'otasining_ismi'], 'string', 'max' => 45, 'message' => 'Ma\'lumot kiriting'],
         ];
     }
 
@@ -55,13 +55,13 @@ class Talaba extends \yii\db\ActiveRecord
             'ism' => 'Ism',
             'familiya' => 'Familiya',
             'otasining_ismi' => 'Otasining Ismi',
-            'region_id' => 'Region ID',
-            'district_id' => 'District ID',
-            'fakultet_id' => 'Fakultet ID',
-            'kurs_id' => 'Kurs ID',
-            'guruh_id' => 'Guruh ID',
-            'yunalish_id' => 'Yunalish ID',
-            'edlang_id' => 'Edlang ID',
+            'region_id' => 'Hudud nomi',
+            'district_id' => 'Tuman/shahar nomi',
+            'fakultet_id' => 'Fakultet nomi',
+            'kurs_id' => 'Kurs',
+            'guruh_id' => 'Guruh raqami',
+            'yunalish_id' => 'Yo\'nalish nomi',
+            'edlang_id' => 'Ta\'lim tili',
             'edtype_id' => 'Edtype ID',
             'bino_id' => 'Bino ID',
             'qavat_id' => 'Qavat ID',
