@@ -136,7 +136,7 @@ class DistrictController extends Controller
         if (($model = District::findOne($id)) !== null) {
             return $model;
         }
-
+        echo "OK";
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 }
