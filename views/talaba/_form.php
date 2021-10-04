@@ -28,7 +28,7 @@ use yii\widgets\ActiveForm;
             $.post( "' . urldecode(Yii::$app->urlManager->createUrl('district/lists?id=')) . '"+$(this).val(), function( data ) {
               $( "#talaba-district_id" ).html( data );
             });
-        ', ]);?>
+        ']);?>
 
 
     <?=$form->field($model, 'district_id')->dropDownList(
@@ -41,7 +41,6 @@ use yii\widgets\ActiveForm;
         'prompt' => 'Fakultetni tanlang',
     ]
 );?>
-    <?=$form->field($model, 'fakultet_id')->textInput()?>
 
     <?=$form->field($model, 'kurs_id')->textInput()?>
 
