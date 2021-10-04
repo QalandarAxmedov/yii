@@ -1775,3 +1775,617 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1633329826.342
     'REQUEST_TIME' => 1633329826
 ]
+2021-10-04 09:36:16 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: faculty_id, course_id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:36:16 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42096'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/program/lists'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/program/lists'
+    'PHP_SELF' => '/index.php/program/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1633340176.6553
+    'REQUEST_TIME' => 1633340176
+]
+2021-10-04 09:36:32 [::1][-][7s3f5qaageausejbihger945s2][error][Error] Error: Class 'app\controllers\District' not found in /home/qalandaraxmedov/Documents/mysite/yii/controllers/ProgramController.php:106
+Stack trace:
+#0 [internal function]: app\controllers\ProgramController->actionLists()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2021-10-04 09:36:32 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = [
+    'faculty_id' => '3'
+    'course_id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42114'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/program/lists?faculty_id=3&course_id=3'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/program/lists'
+    'PHP_SELF' => '/index.php/program/lists'
+    'QUERY_STRING' => 'faculty_id=3&course_id=3'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1633340192.2827
+    'REQUEST_TIME' => 1633340192
+]
+2021-10-04 09:51:39 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: talaba/superman in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2021-10-04 09:51:39 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = [
+    'field1' => 'hello'
+    'field2' => 'hello2'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42380'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/talaba/superman'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/talaba/superman'
+    'PHP_SELF' => '/index.php/talaba/superman'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ORSZPiAWCqhv0vlcoXj6s7BNQUzcO7MdAkeByIgCVUdpW_xTZlt7_TeYzB_0AMLb13UjBLlT9UU3cfOH2Vgmag=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '26'
+    'HTTP_CONTENT_LENGTH' => '26'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1633341099.5121
+    'REQUEST_TIME' => 1633341099
+]
+2021-10-04 09:53:24 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:53:24 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = [
+    'id' => '$(this).val()'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42428'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'GuhbBVjS3fCqHy_6SmU_8BfhOoQJo7QC1E_eSUCLT31Kpz5oHp-spfJVGrkfHQeYcNlYzGzL8lrheawGEdE8UA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '18'
+    'HTTP_CONTENT_LENGTH' => '18'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1633341204.5136
+    'REQUEST_TIME' => 1633341204
+]
+2021-10-04 09:53:35 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:53:35 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42452'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/debug/default/view?tag=615acf147e8d7'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1633341215.5112
+    'REQUEST_TIME' => 1633341215
+]
+2021-10-04 09:54:16 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:54:16 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = [
+    'id' => '5'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42490'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => '8DHg_GoryLL-E7QJ49Uy_4X4qCv0wdxNX7Vt3q245YOgfoWRLGa556ZZgUq2rQqX4sDKY5GpmhVqgx-R_OKWrg=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_CONTENT_LENGTH' => '4'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1633341256.0313
+    'REQUEST_TIME' => 1633341256
+]
+2021-10-04 09:54:45 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:54:45 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = [
+    'id' => '5'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42530'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'qBdO5Oqml4CJlL-v_ObxDHo3Pcubb6kuyCl70vM34dv4WCuJrOvm1dHeiuypnslkHQ9fg_4H73b9Hwmdom2S9g=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_CONTENT_LENGTH' => '4'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1633341285.2667
+    'REQUEST_TIME' => 1633341285
+]
+2021-10-04 09:56:27 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:56:27 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = [
+    'id' => '5'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42572'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'YXtkeAmen0n2dtdyjjOk05_Fwuw_tPmcT8eiIvmvnQUxNAEVT9PuHK484jHbS5y7-P2gpFrcv8R68dBtqPXuKA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_CONTENT_LENGTH' => '4'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1633341387.4682
+    'REQUEST_TIME' => 1633341387
+]
+2021-10-04 09:56:33 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:56:33 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42590'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/debug/default/view?tag=615acfcb732d1'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1633341393.6288
+    'REQUEST_TIME' => 1633341393
+]
+2021-10-04 09:57:39 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:57:39 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = [
+    'id' => '5'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42724'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'G2rAH5RdB_7hM9327R4regfwVYYzKCIXIwcr__coQO1LJaVy0hB2q7l56LW4ZhMSYMg3zlZAZE8WMVmwpnIzwA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_CONTENT_LENGTH' => '4'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1633341459.8313
+    'REQUEST_TIME' => 1633341459
+]
+2021-10-04 09:58:08 [::1][-][7s3f5qaageausejbihger945s2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Controller.php:196
+Stack trace:
+#0 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams()
+#1 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2021-10-04 09:58:08 [::1][-][7s3f5qaageausejbihger945s2][info][application] $_GET = []
+
+$_POST = [
+    'id' => '5'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7s3f5qaageausejbihger945s2'
+    '_csrf' => 'e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"POemFMqUXJ5CUx8hg8bHehFX56rOQZs-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '42754'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/district/lists'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/district/lists'
+    'PHP_SELF' => '/index.php/district/lists'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'G2rAH5RdB_7hM9327R4regfwVYYzKCIXIwcr__coQO1LJaVy0hB2q7l56LW4ZhMSYMg3zlZAZE8WMVmwpnIzwA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_CONTENT_LENGTH' => '4'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=7s3f5qaageausejbihger945s2; _csrf=e00793a34a0b365a72a0c73e98b4edc249cc2175dd16907db520a5f171076194a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22POemFMqUXJ5CUx8hg8bHehFX56rOQZs-%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1633341488.1018
+    'REQUEST_TIME' => 1633341488
+]

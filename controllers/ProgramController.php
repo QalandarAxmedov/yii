@@ -4,9 +4,9 @@ namespace app\controllers;
 
 use app\models\Program;
 use app\models\ProgramSearch;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * ProgramController implements the CRUD actions for Program model.
@@ -100,7 +100,18 @@ class ProgramController extends Controller
             'model' => $model,
         ]);
     }
-
+    public function actionLists($faculty_id, $course_id)
+    {
+        $sql = "select * from program where faculty_id='$faculty_id' and course_id='$course_id'";
+        $models = Program::findBySQL($sql)->asArray()->all();
+        if (sizeof($models) > 0) {
+            foreach ($models as $model) {
+                echo "<option value='" . $model['id'] . "'>" . $model['name'] . "</option>";
+            }
+        } else {
+            echo "<option>Yo'nalishni tanlang</option>";
+        }
+    }
     /**
      * Deletes an existing Program model.
      * If deletion is successful, the browser will be redirected to the 'index' page.

@@ -26,10 +26,10 @@ use yii\widgets\ActiveForm;
     [
         'prompt' => 'Hududni tanlang',
         'onchange' => '
-            $.post( "' . urldecode(Yii::$app->urlManager->createUrl('district/lists?id=')) . '"+$(this).val(), function( data ) {
+            $.post( "' . urldecode(Yii::$app->urlManager->createUrl('district/lists?id=')) . '"+$(this).val()+"&faculty_id=", function( data ) {
               $( "#talaba-district_id" ).html( data );
             });
-        ']);?>
+        ', ]);?>
 
 
     <?=$form->field($model, 'district_id')->dropDownList(
@@ -46,10 +46,22 @@ use yii\widgets\ActiveForm;
     ArrayHelper::map(Course::find()->all(), 'id', 'name'),
     [
         'prompt' => '-Kursni tanlang-',
+        'onchange' => '
+        $.post(
+            "/program/lists?faculty_id="
+                +$("#talaba-fakultet_id").val() + "&course_id=" + $(this).val(),
+            function(data) {
+                  $( "#talaba-yunalish_id").html(data)
+            }
+        )',
     ]
 );?>
 
     <?=$form->field($model, 'guruh_id')->textInput()?>
+    <?=$form->field($model, 'yunalish_id')->dropDownList(
+    [
+        'prompt' => '-Yo\'nalishni tanlang-',
+    ]);?>
 
     <?=$form->field($model, 'yunalish_id')->textInput()?>
 
