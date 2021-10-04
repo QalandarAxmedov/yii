@@ -4,9 +4,9 @@ namespace app\controllers;
 
 use app\models\District;
 use app\models\DistrictSearch;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * DistrictController implements the CRUD actions for District model.
@@ -100,7 +100,16 @@ class DistrictController extends Controller
             'model' => $model,
         ]);
     }
-
+    public function actionLists($id)
+    {
+        $sql = "select * from district where region_id='$id'";
+        $models = District::findBySQL($sql)->asArray()->all();
+        if (sizeof($models) > 0) {
+            foreach ($models as $model) {
+                echo "<option value='" . $model['id'] . "'>" . $model['name'] . "</option>";
+            }
+        }
+    }
     /**
      * Deletes an existing District model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
