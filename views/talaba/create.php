@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Talaba */
 
 $this->title = 'Yangi talabani qo\'shish';
-$this->params['breadcrumbs'][] = ['label' => 'Talabas', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Talabalar', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="talaba-create">

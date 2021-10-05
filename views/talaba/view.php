@@ -2,14 +2,14 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use yii\web\YiiAsset;
 /* @var $this yii\web\View */
 /* @var $model app\models\Talaba */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Talabas', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Talabalar', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
-\yii\web\YiiAsset::register($this);
+YiiAsset::register($this);
 ?>
 <div class="talaba-view">
 
