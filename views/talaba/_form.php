@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?=$form->field($model, 'familiya')->textInput(['maxlength' => true, 'placeholder' => "Familiyangizni kiriting"])?>
 
-    <?=$form->field($model, 'otasining_ismi')->textInput(['maxlength' => true])?>
+    <?=$form->field($model, 'otasining_ismi')->textInput(['maxlength' => true,'placeholer'=>"Otangizni ismini kiriting"])?>
 
     <?=$form->field($model, 'region_id')->dropDownList(
     ArrayHelper::map(Region::find()->all(), 'id', 'name'),
