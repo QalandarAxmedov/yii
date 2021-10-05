@@ -2838,3 +2838,232 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1633407376.0619
     'REQUEST_TIME' => 1633407376
 ]
+2021-10-05 04:33:12 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\ProgramController' in file: /home/qalandaraxmedov/Documents/mysite/yii/controllers/ProgramController.php. Namespace missing? in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 [internal function]: spl_autoload_call()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(643): class_exists()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(602): yii\base\Module->createControllerByID()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Module->createController()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-10-05 04:33:12 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][info][application] $_GET = [
+    'faculty_id' => ''
+    'course_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'vbpd17uoq4lcc4ocqobl4g3d4m'
+    '_csrf' => '8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '38484'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/program/lists?faculty_id=&course_id=1'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/program/lists'
+    'PHP_SELF' => '/index.php/program/lists'
+    'QUERY_STRING' => 'faculty_id=&course_id=1'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'tqSZ2VslhNXetr8osbTdCrCeodQzopXbBkJ_pylmomD4if2NDFDImbH3jkrS36djw6nFuVvN7bdMey_1eACXEQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=vbpd17uoq4lcc4ocqobl4g3d4m; _csrf=8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q%22%3B%7D'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONTENT_LENGTH' => '0'
+    'REQUEST_TIME_FLOAT' => 1633408392.6237
+    'REQUEST_TIME' => 1633408392
+]
+2021-10-05 04:33:22 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\ProgramController' in file: /home/qalandaraxmedov/Documents/mysite/yii/controllers/ProgramController.php. Namespace missing? in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 [internal function]: spl_autoload_call()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(643): class_exists()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(602): yii\base\Module->createControllerByID()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Module->createController()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-10-05 04:33:22 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][info][application] $_GET = [
+    'faculty_id' => '1'
+    'course_id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'vbpd17uoq4lcc4ocqobl4g3d4m'
+    '_csrf' => '8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '38490'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/program/lists?faculty_id=1&course_id=2'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/program/lists'
+    'PHP_SELF' => '/index.php/program/lists'
+    'QUERY_STRING' => 'faculty_id=1&course_id=2'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'tqSZ2VslhNXetr8osbTdCrCeodQzopXbBkJ_pylmomD4if2NDFDImbH3jkrS36djw6nFuVvN7bdMey_1eACXEQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/talaba/create'
+    'HTTP_COOKIE' => 'PHPSESSID=vbpd17uoq4lcc4ocqobl4g3d4m; _csrf=8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q%22%3B%7D'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONTENT_LENGTH' => '0'
+    'REQUEST_TIME_FLOAT' => 1633408402.0264
+    'REQUEST_TIME' => 1633408402
+]
+2021-10-05 04:33:33 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\ProgramController' in file: /home/qalandaraxmedov/Documents/mysite/yii/controllers/ProgramController.php. Namespace missing? in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 [internal function]: spl_autoload_call()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(643): class_exists()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(602): yii\base\Module->createControllerByID()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Module->createController()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-10-05 04:33:33 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][info][application] $_GET = [
+    'faculty_id' => '1'
+    'course_id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'vbpd17uoq4lcc4ocqobl4g3d4m'
+    '_csrf' => '8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '38508'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/program/lists?faculty_id=1&course_id=2'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/program/lists'
+    'PHP_SELF' => '/index.php/program/lists'
+    'QUERY_STRING' => 'faculty_id=1&course_id=2'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/debug/default/view?tag=615bd59209128'
+    'HTTP_COOKIE' => 'PHPSESSID=vbpd17uoq4lcc4ocqobl4g3d4m; _csrf=8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1633408413.6039
+    'REQUEST_TIME' => 1633408413
+]
+2021-10-05 04:41:35 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TalabaController' in file: /home/qalandaraxmedov/Documents/mysite/yii/controllers/TalabaController.php. Namespace missing? in /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 [internal function]: spl_autoload_call()
+#2 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(643): class_exists()
+#3 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(602): yii\base\Module->createControllerByID()
+#4 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Module->createController()
+#5 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/qalandaraxmedov/Documents/mysite/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/qalandaraxmedov/Documents/mysite/yii/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-10-05 04:41:35 [::1][-][vbpd17uoq4lcc4ocqobl4g3d4m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'vbpd17uoq4lcc4ocqobl4g3d4m'
+    '_csrf' => '8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/qalandaraxmedov/Documents/mysite/yii/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '38758'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/talaba/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/qalandaraxmedov/Documents/mysite/yii/web/index.php'
+    'PATH_INFO' => '/talaba/create'
+    'PHP_SELF' => '/index.php/talaba/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/talaba/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=vbpd17uoq4lcc4ocqobl4g3d4m; _csrf=8aa5df203bbacd52f0c19127bb3ef22f0ab96c4aebab8b866bb755075282b7a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N-dTWuLLoA1bckzis7dmhoxlJ9PRQf5q%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'REQUEST_TIME_FLOAT' => 1633408895.2789
+    'REQUEST_TIME' => 1633408895
+]

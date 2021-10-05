@@ -27,6 +27,7 @@ use yii\widgets\ActiveForm;
     [
         'prompt' => 'Hududni tanlang',
         'onchange' => '
+        
             $.post( "' . urldecode(Yii::$app->urlManager->createUrl('district/lists?id=')) . '"+$(this).val()+"&faculty_id=", function( data ) {
               $( "#talaba-district_id" ).html( data );
             });
