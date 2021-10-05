@@ -30,20 +30,20 @@ use yii\widgets\ActiveForm;
             $.post( "' . urldecode(Yii::$app->urlManager->createUrl('district/lists?id=')) . '"+$(this).val()+"&faculty_id=", function( data ) {
               $( "#talaba-district_id" ).html( data );
             });
-        ', ])->label("Hudud");?>
+        ']);?>
 
 
     <?=$form->field($model, 'district_id')->dropDownList(
     [
         'prompt' => 'Tumanni tanlang',
 
-    ])->label("Tuman/shahar nomi");?>
+    ])?>
     <?=$form->field($model, 'fakultet_id')->dropDownList(
     ArrayHelper::map(Faculty::find()->all(), 'id', 'name'),
     [
         'prompt' => 'Fakultetni tanlang',
     ]
-)->label("Fakultet nomi");?>
+)?>
     <?=$form->field($model, 'kurs_id')->dropDownList(
     ArrayHelper::map(Course::find()->all(), 'id', 'name'),
     [
@@ -59,7 +59,7 @@ use yii\widgets\ActiveForm;
     ]
 );?>
 
-    <?=$form->field($model, 'guruh_id')->textInput()?>
+    <?=$form->field($model, 'guruh_id')->textInput(['placeholder' => "Guruh raqamini kiriting"])?>
     <?=$form->field($model, 'yunalish_id')->dropDownList(
     [
         'prompt' => 'Yo\'nalishni tanlang',
@@ -71,7 +71,7 @@ use yii\widgets\ActiveForm;
         'prompt' => 'Ta\'lim tilini tanlang',
     ]);?>
 
-    <?=$form->field($model, 'edtype_id')->textInput()?>
+    <?=$form->field($model, 'edtype_id')->textInput(['placeholder' => "Ta'lim turini tanlang"])?>
 
     <?=$form->field($model, 'bino_id')->textInput()?>
 

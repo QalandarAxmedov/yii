@@ -41,7 +41,7 @@ class Talaba extends \yii\db\ActiveRecord
         return [
             [['ism', 'familiya', 'region_id', 'district_id', 'fakultet_id', 'kurs_id', 'guruh_id', 'yunalish_id', 'edlang_id', 'edtype_id', 'bino_id', 'qavat_id', 'xona_id'], 'required'],
             [['region_id', 'district_id', 'fakultet_id', 'kurs_id', 'guruh_id', 'yunalish_id', 'edlang_id', 'edtype_id', 'bino_id', 'qavat_id', 'xona_id'], 'integer'],
-            [['ism', 'familiya', 'otasining_ismi'], 'string', 'max' => 45, 'message' => 'Ma\'lumot kiriting'],
+            [['ism', 'familiya', 'otasining_ismi'], 'string', 'max' => 45, 'message' => Yii::t('app', 'This field is required')],
         ];
     }
 
@@ -52,20 +52,20 @@ class Talaba extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'ism' => 'Ism',
-            'familiya' => 'Familiya',
-            'otasining_ismi' => 'Otasining Ismi',
-            'region_id' => 'Hudud nomi',
-            'district_id' => 'Tuman/shahar nomi',
-            'fakultet_id' => 'Fakultet nomi',
-            'kurs_id' => 'Kurs',
-            'guruh_id' => 'Guruh raqami',
-            'yunalish_id' => 'Yo\'nalish nomi',
-            'edlang_id' => 'Ta\'lim tili',
-            'edtype_id' => 'Edtype ID',
-            'bino_id' => 'Bino ID',
-            'qavat_id' => 'Qavat ID',
-            'xona_id' => 'Xona ID',
+            'ism' => false,
+            'familiya' => false,
+            'otasining_ismi' => false,
+            'region_id' => false,
+            'district_id' => false,
+            'fakultet_id' => false,
+            'kurs_id' => false,
+            'guruh_id' => false,
+            'yunalish_id' => false,
+            'edlang_id' => false,
+            'edtype_id' => false,
+            'bino_id' => false,
+            'qavat_id' => false,
+            'xona_id' => false,
         ];
     }
 }
