@@ -2,16 +2,16 @@
 
 namespace app\controllers;
 
-use app\models\EdType;
-use app\models\EdTypeSearch;
+use app\models\Qavatlar;
+use app\models\QavatlarSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * EdTypeController implements the CRUD actions for EdType model.
+ * QavatlarController implements the CRUD actions for Qavatlar model.
  */
-class EdTypeController extends Controller
+class QavatlarController extends Controller
 {
     /**
      * @inheritDoc
@@ -32,12 +32,12 @@ class EdTypeController extends Controller
     }
 
     /**
-     * Lists all EdType models.
+     * Lists all Qavatlar models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new EdTypeSearch();
+        $searchModel = new QavatlarSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -47,7 +47,7 @@ class EdTypeController extends Controller
     }
 
     /**
-     * Displays a single EdType model.
+     * Displays a single Qavatlar model.
      * @param int $id ID
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -60,14 +60,13 @@ class EdTypeController extends Controller
     }
 
     /**
-     * Creates a new EdType model.
+     * Creates a new Qavatlar model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-
     public function actionCreate()
     {
-        $model = new EdType();
+        $model = new Qavatlar();
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
@@ -83,7 +82,7 @@ class EdTypeController extends Controller
     }
 
     /**
-     * Updates an existing EdType model.
+     * Updates an existing Qavatlar model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return mixed
@@ -103,7 +102,7 @@ class EdTypeController extends Controller
     }
 
     /**
-     * Deletes an existing EdType model.
+     * Deletes an existing Qavatlar model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return mixed
@@ -117,15 +116,15 @@ class EdTypeController extends Controller
     }
 
     /**
-     * Finds the EdType model based on its primary key value.
+     * Finds the Qavatlar model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return EdType the loaded model
+     * @return Qavatlar the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = EdType::findOne($id)) !== null) {
+        if (($model = Qavatlar::findOne($id)) !== null) {
             return $model;
         }
 

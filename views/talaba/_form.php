@@ -3,6 +3,8 @@
 use app\models\Course;
 use app\models\EdLang;
 use app\models\Faculty;
+use app\models\Bino;
+use app\models\EdType;
 use app\models\Region;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -69,12 +71,23 @@ use yii\widgets\ActiveForm;
     <?=$form->field($model, 'edlang_id')->dropDownList(
     ArrayHelper::map(EdLang::find()->all(), 'id', 'name'),
     [
-        'prompt' => 'Ta\'lim tilini tanlang',
+        'prompt' => "Ta'lim tilini tanlang",
     ]);?>
 
-    <?=$form->field($model, 'edtype_id')->textInput(['placeholder' => "Ta'lim turini tanlang"])?>
+    <?=$form->field($model, 'edtype_id')->dropDownList(
+            ArrayHelper::map(EdType::find()->all(),'id','name'),
+        [
+                'prompt'=>"Ta'lim shaklini tanlang"
+        ]
+    );
+    ?>
 
-    <?=$form->field($model, 'bino_id')->textInput()?>
+    <?=$form->field($model, 'bino_id')->dropDownList(
+            ArrayHelper::map(Bino::find()->all(),'id','name'),
+        [
+                'prompt'=>"Bino raqamini tanlang"
+        ]
+    );?>
 
     <?=$form->field($model, 'qavat_id')->textInput()?>
 
