@@ -6,6 +6,7 @@ use app\models\Faculty;
 use \app\models\Qavatlar;
 use app\models\Bino;
 use app\models\EdType;
+use kartik\select2\Select2;
 use app\models\Region;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -22,6 +23,12 @@ use yii\widgets\ActiveForm;
     <?=$form->field($model, 'ism')->textInput(['maxlength' => true, 'placeholder' => "Ismingizni kiriting"])->label(false)?>
     <?=$form->field($model, 'familiya')->textInput(['maxlength' => true, 'placeholder' => "Familiyangizni kiriting"])?>
     <?=$form->field($model, 'otasining_ismi')->textInput(['maxlength' => true,'placeholder'=>"Otangizni ismini kiriting"])?>
+    <?php $form->field($model, 'ism')->widget(Select2::classname(), [
+        'data' => [1 => "First", 2 => "Second", 3 => "Third", 4 => "Fourth", 5 => "Fifth"],
+        'options' => ['placeholder' => 'Select a state ...'],
+        'pluginOptions' => [
+            'allowClear' => true
+        ],]);?>
     <?=$form->field($model, 'region_id')->dropDownList(
     ArrayHelper::map(Region::find()->all(), 'id', 'name'),
     [
