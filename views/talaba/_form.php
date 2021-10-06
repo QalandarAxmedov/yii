@@ -18,6 +18,7 @@ use yii\widgets\ActiveForm;
 <div class="talaba-form">
 
     <?php $form = ActiveForm::begin();?>
+
     <?=$form->field($model, 'ism')->textInput(['maxlength' => true, 'placeholder' => "Ismingizni kiriting"])->label(false)?>
     <?=$form->field($model, 'familiya')->textInput(['maxlength' => true, 'placeholder' => "Familiyangizni kiriting"])?>
     <?=$form->field($model, 'otasining_ismi')->textInput(['maxlength' => true,'placeholder'=>"Otangizni ismini kiriting"])?>
@@ -29,12 +30,18 @@ use yii\widgets\ActiveForm;
         
             $.post( "' . urldecode(Yii::$app->urlManager->createUrl('district/lists?id=')) . '"+$(this).val()+"&faculty_id=", function( data ) {
               $( "#talaba-district_id" ).html( data );
+                             $("#talaba-district_id").removeAttr("disabled");
+                                             }
             });
         ']);?>
     <?=$form->field($model, 'district_id')->dropDownList(
     [
         'prompt' => 'Tumanni tanlang',
 
+
+    ],
+    [
+            'disabled'=>'disabled'
     ])?>
     <?=$form->field($model, 'fakultet_id')->dropDownList(
     ArrayHelper::map(Faculty::find()->all(), 'id', 'name'),
@@ -77,10 +84,20 @@ use yii\widgets\ActiveForm;
     <?=$form->field($model, 'qavat_id')->dropDownList(
             ArrayHelper::map(Qavatlar::find()->all(),'id','name'),
         [
-                'prompt'=>"Qavatlardan birini tanlang"
+                'prompt'=>"Qavatlardan birini tanlang",
+            'onchange' => '
+        
+            $.post( "' . urldecode(Yii::$app->urlManager->createUrl('xonalar/lists?id=')) . '"+$(this).val(), function( data ) {
+              $( "#talaba-xona_id" ).html( data );
+            });
+        '
         ]
     )?>
-    <?=$form->field($model, 'xona_id')->textInput()?>
+    <?=$form->field($model, 'xona_id')->dropDownList(
+            [
+                    'prompt'=>"Xonani tanlang"
+            ]
+    )?>
 
         <?=Html::submitButton('Save', ['class' => 'btn btn-success'])?>
 
