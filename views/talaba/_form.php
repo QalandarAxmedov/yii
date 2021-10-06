@@ -4,6 +4,7 @@ use app\models\Course;
 use app\models\EdLang;
 use app\models\Faculty;
 use \app\models\Qavatlar;
+use kartik\depdrop\DepDrop;
 use app\models\Bino;
 use app\models\EdType;
 use kartik\select2\Select2;
@@ -11,6 +12,7 @@ use app\models\Region;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $model app\models\Talaba */
 /* @var $form yii\widgets\ActiveForm */
@@ -23,12 +25,28 @@ use yii\widgets\ActiveForm;
     <?=$form->field($model, 'ism')->textInput(['maxlength' => true, 'placeholder' => "Ismingizni kiriting"])->label(false)?>
     <?=$form->field($model, 'familiya')->textInput(['maxlength' => true, 'placeholder' => "Familiyangizni kiriting"])?>
     <?=$form->field($model, 'otasining_ismi')->textInput(['maxlength' => true,'placeholder'=>"Otangizni ismini kiriting"])?>
-    <?php $form->field($model, 'ism')->widget(Select2::classname(), [
-        'data' => [1 => "First", 2 => "Second", 3 => "Third", 4 => "Fourth", 5 => "Fifth"],
-        'options' => ['placeholder' => 'Select a state ...'],
-        'pluginOptions' => [
-            'allowClear' => true
-        ],]);?>
+    <?php $products=ArrayHelper::map(Region::find()->all(), 'id', 'name');
+    print_r($products);
+    $productsExtraData = [];
+    foreach ( $products as $product ) {
+//        $productsExtraData[$product->id] = ['name' => $product->name];
+    }
+    $form->field($model, 'ism')->widget(Select2::classname(),[
+        'name' => 'region',
+        'data' => ArrayHelper::map(Region::find()->all(), 'id', 'name'),
+        'options' => [
+            'placeholder' => 'Select a type ...',
+            'options' => [
+                1 => ['data-level' => 'something 1'],
+                2 => ['data-level' => 'something 2'],
+                3 => ['data-level' => 'something 3'],
+                4 => ['data-level' => 'something 4'],
+                5 => ['data-level' => 'something 5'],
+            ]
+        ],
+    ]);
+
+    ?>
     <?=$form->field($model, 'region_id')->dropDownList(
     ArrayHelper::map(Region::find()->all(), 'id', 'name'),
     [
@@ -41,6 +59,16 @@ use yii\widgets\ActiveForm;
                                              }
             });
         ']);?>
+    <?=
+    $form->field($model, 'district_id')->widget(DepDrop::classname(), [
+        'options'=>['id'=>'district-id'],
+        'pluginOptions'=>[
+            'depends'=>['talaba-region_id'],
+            'placeholder'=>'Select...',
+            'url'=>Url::to(['/district/lists?id=5'])
+        ]
+    ])
+    ?>
     <?=$form->field($model, 'district_id')->dropDownList(
     [
         'prompt' => 'Tumanni tanlang',
